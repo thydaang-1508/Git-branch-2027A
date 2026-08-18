@@ -1,0 +1,476 @@
+/* ============================================
+   SERVICES PAGE SPECIFIC STYLES
+   ============================================ */
+
+/* Services Hero Section */
+.services-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+}
+
+.services-hero .hero-content {
+    animation: fadeInUp 0.8s ease;
+}
+
+.services-hero .hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.services-hero .hero-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.95;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Services Overview Section */
+.services-overview {
+    background: white;
+    padding: 80px 0;
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.overview-card {
+    background: #f8f9fa;
+    padding: 2.5rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.overview-card:hover {
+    transform: translateY(-8px);
+    background: white;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.overview-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.overview-card h3 {
+    font-size: 1.4rem;
+    color: #1a202c;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.overview-card p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+/* Main Services Section */
+.main-services {
+    background: #f8f9fa;
+    padding: 80px 0;
+}
+
+.service-detail {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    padding: 3rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    position: relative;
+    animation: fadeInUp 0.8s ease;
+    transition: all 0.3s ease;
+}
+
+.service-detail:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    transform: translateY(-5px);
+}
+
+.service-detail.alternate {
+    grid-template-columns: 1fr 1fr;
+    direction: rtl;
+}
+
+.service-detail.alternate > * {
+    direction: ltr;
+}
+
+.service-number {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #e0e0e0;
+    z-index: 1;
+}
+
+.service-content {
+    position: relative;
+    z-index: 2;
+}
+
+.service-title {
+    font-size: 2rem;
+    color: #1a202c;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.service-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+.service-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.feature-icon {
+    color: #667eea;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.service-image {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Service Packages Section */
+.service-packages {
+    background: white;
+    padding: 80px 0;
+}
+
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.package-card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 2.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+}
+
+.package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.package-card.featured {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.package-card.featured:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.package-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f5576c;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.package-header h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.package-card.featured .package-header h3 {
+    color: white;
+}
+
+.package-description {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.package-card.featured .package-description {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.package-price {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #667eea;
+}
+
+.package-card.featured .price {
+    color: white;
+}
+
+.period {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.package-card.featured .period {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.package-features {
+    list-style: none;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.package-features li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #e0e0e0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.package-card.featured .package-features li {
+    color: rgba(255, 255, 255, 0.9);
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.package-features li:last-child {
+    border-bottom: none;
+}
+
+/* Technology Stack Section */
+.tech-stack {
+    background: #f8f9fa;
+    padding: 80px 0;
+}
+
+.tech-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.tech-category {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.tech-category h4 {
+    font-size: 1.3rem;
+    color: #1a202c;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.tech-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: center;
+}
+
+.tech-items span {
+    background: #f0f0f0;
+    color: #555;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.tech-items span:hover {
+    background: #667eea;
+    color: white;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 80px 0;
+    text-align: center;
+    color: white;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN - SERVICES PAGE
+   ============================================ */
+
+@media (max-width: 768px) {
+    .services-hero .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .services-hero .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .service-detail {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .service-detail.alternate {
+        direction: ltr;
+    }
+
+    .service-features {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .service-number {
+        position: static;
+        font-size: 2rem;
+        color: #667eea;
+        margin-bottom: 1rem;
+    }
+
+    .package-card.featured {
+        transform: scale(1);
+    }
+
+    .package-card.featured:hover {
+        transform: translateY(-10px);
+    }
+
+    .overview-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-hero {
+        padding: 60px 0;
+    }
+
+    .services-hero .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .services-hero .hero-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .service-title {
+        font-size: 1.5rem;
+    }
+
+    .service-description {
+        font-size: 0.9rem;
+    }
+
+    .service-detail {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .service-features {
+        gap: 0.8rem;
+    }
+
+    .feature {
+        font-size: 0.85rem;
+    }
+
+    .package-card {
+        padding: 1.5rem;
+    }
+
+    .package-header h3 {
+        font-size: 1.3rem;
+    }
+
+    .price {
+        font-size: 2rem;
+    }
+
+    .package-features li {
+        font-size: 0.85rem;
+        padding: 0.6rem 0;
+    }
+
+    .tech-category {
+        padding: 1.5rem;
+    }
+
+    .cta-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta-content p {
+        font-size: 0.95rem;
+    }
+}
